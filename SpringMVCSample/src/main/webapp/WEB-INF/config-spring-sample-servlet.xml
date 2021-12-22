@@ -22,6 +22,9 @@
 		http://www.springframework.org/schema/util https://www.springframework.org/schema/util/spring-util-4.3.xsd">
 
 	<context:component-scan	base-package="SpringMVCSample"/>
-
+	<bean class="org.springframework.web.servlet.view.InternalResourceViewResolver"> 
+		<property name="prefix" value="/WEB-INF/views/"></property>
+		<property name="suffix" value=".jsp"></property>
+	</bean>
 
 </beans>

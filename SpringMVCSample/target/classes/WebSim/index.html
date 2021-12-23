@@ -1,7 +1,44 @@
-<%@ page language="java" contentType="text/html; charset=UTF-8"
-	pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" href="images/sim-card.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sim Ngọc Đô</title>
+    <!-- swiper added -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+    <!-- font-awsome source -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <!-- css -->
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
 <body>
- <!-- Search form -->
+    <!-- header start -->
+    <header>
+
+        <a href="#" class="logo"><i class="fas fa-sim-card"></i>Sim Ngọc Đô</a>
+
+        <nav class="navbar">
+            <a href="#home" class="active">Trang chủ</a>
+            <a href="#dishes">Nổi bật</a>
+            <a href="#about">Về chúng tôi</a>
+            <a href="#menu">Sản phẩm</a>
+            <a href="#review">Đánh giá</a>
+            <a href="#order">liên hệ</a>
+        </nav>
+
+        <div class="icons">
+            <i class="fas fa-bars" id="menu-bars"></i>
+            <i class="fas fa-search" id="search-icon"></i>
+            <a class="fas fa-heart"></a>
+            <a class="fas fa-shopping-cart"></a>
+        </div>
+    </header>
+    <!-- header end -->
+    <!-- Search form -->
     <form action="" id="search-form">
         <input type="search" placeholder="Search here...." name="" id="search-box">
         <label for="search-box" class="fas fa-search"></label>
@@ -538,4 +575,53 @@
         </form>
     </section>
     <!-- order section end -->
+    <!-- footer start -->
+    <section class="footer">
+
+        <div class="box-container">
+
+            <div class="box">
+                <h3>locaition</h3>
+                <a href="#">india</a>
+                <a href="#">india</a>
+                <a href="#">india</a>
+                <a href="#">india</a>
+                <a href="#">india</a>
+            </div>
+            <div class="box">
+                <h3>menu</h3>
+                <a href="home">Trang chủ</a>
+                <a href="dishes">Nổi bật</a>
+                <a href="about">Về chúng tôi</a>
+                <a href="menu">Sản phẩm</a>
+                <a href="review">Đánh giá</a>
+                <a href="order">Liên hệ</a>
+            </div>
+            <div class="box">
+                <h3>Liên hệ</h3>
+                <a href="#">+841000000</a>
+                <a href="#">+841000000</a>
+                <a href="#">+841000000</a>
+                <a href="#">ngocdo@gmail.com</a>
+                <a href="#">KM38,Phước An, Krông Păk, Đăk Lăk</a>
+            </div>
+            <div class="box">
+                <h3>Theo dõi chúng tôi</h3>
+                <a href="https://www.facebook.com/khosimracdaklak">facebook</a>
+                <a href="#">zalo</a>
+            </div>
+        </div>
+        <div class="credit">copyright @ 2021 by <span>Kho sim rác Đăk Lăk</span></div>
+    </section>
+    <!-- footer end -->
+    <!-- loader -->
+    <div class="loader-container">
+        <img src="images/loader.gif" alt="">
+    </div>
+    <!-- js -->
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+    <script src="js/script.js"></script>
+    <!-- js end -->
 </body>
+
+</html>

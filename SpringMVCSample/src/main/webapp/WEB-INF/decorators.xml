@@ -1,7 +1,7 @@
 <decorators defaultdir="/WEB-INF/views/layouts">
 <!-- When login role user -->
 	<decorator name="user" page="user.jsp">
-		<pattern>/trang-chu/*</pattern>
+		<pattern>/*</pattern>
 	</decorator>
 	<!-- When login role admin -->
 	<decorator name="admin" page="admin">

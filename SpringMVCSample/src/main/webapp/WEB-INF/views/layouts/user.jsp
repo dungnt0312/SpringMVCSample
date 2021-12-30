@@ -36,7 +36,22 @@
     <section class="home" id="home">
         <div class="swiper home-slider">
             <div class="swiper-wrapper wrapper">
-                <div class="swiper-slide slide">
+            
+            <c:forEach var="item" items="${slides}" varStatus="index" >
+            	<div class="swiper-slide slide">
+                    <div class="content">
+                    	<p>${slides.size()}</p>
+                        <span>${item.tag}</span>
+                        <h3>${item.caption}</h3>
+                        <p>${item.content}</p>
+                        <a href="#" class="btn">Mua ngay</a>
+                    </div>
+                    <div class="image">
+                        <img src="<c:url value="/assets/user/images/slides/${item.img}"/>" alt="">
+                    </div>
+                </div>
+            </c:forEach>
+            <!-- <div class="swiper-slide slide">
                     <div class="content">
                         <span>Sản phẩm, dịch vụ phổ biến</span>
                         <h3>Sim rác, sim lên mạng</h3>
@@ -44,7 +59,7 @@
                         <a href="#" class="btn">Mua ngay</a>
                     </div>
                     <div class="image">
-                        <img src="<c:url value="/assets/user/images/home-img-1.png"/>" alt="">
+                        <img src="<c:url value="/assets/user/images/slides/home-img-1.png"/>" alt="">
                     </div>
                 </div>
 
@@ -56,7 +71,7 @@
                         <a href="#" class="btn">Mua ngay</a>
                     </div>
                     <div class="image">
-                        <img src="<c:url value ="/assets/user/images/home-img-2.png"/>" alt="">
+                        <img src="<c:url value ="/assets/user/images/slides/home-img-2.png"/>" alt="">
                     </div>
                 </div>
 
@@ -70,11 +85,11 @@
                         <a href="#" class="btn">Tìm hiểu thêm</a>
                     </div>
                     <div class="image">
-                        <img src="<c:url value ="/assets/user/images/home-img-3.png"/>" alt="">
+                        <img src="<c:url value ="/assets/user/images/slides/home-img-3.png"/>" alt="">
                     </div>
-                </div>
+                </div> -->>
+                
             </div>
-            <div class="swiper-pagination"></div>
         </div>
 
     </section>

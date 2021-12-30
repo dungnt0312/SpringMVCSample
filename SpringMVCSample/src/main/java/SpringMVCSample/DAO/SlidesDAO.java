@@ -11,7 +11,7 @@ import SpringMVCSample.Entity.MapperSlides;
 import SpringMVCSample.Entity.Slides;
 
 @Repository
-public class HomeDAO {
+public class SlidesDAO {
 	@Autowired
 	public JdbcTemplate _jdbcTemplate;
 	

@@ -36,60 +36,22 @@
     <section class="home" id="home">
         <div class="swiper home-slider">
             <div class="swiper-wrapper wrapper">
-            
-            <c:forEach var="item" items="${slides}" varStatus="index" >
-            	<div class="swiper-slide slide">
-                    <div class="content">
-                    	<p>${slides.size()}</p>
-                        <span>${item.tag}</span>
-                        <h3>${item.caption}</h3>
-                        <p>${item.content}</p>
-                        <a href="#" class="btn">Mua ngay</a>
-                    </div>
-                    <div class="image">
-                        <img src="<c:url value="/assets/user/images/slides/${item.img}"/>" alt="">
-                    </div>
-                </div>
-            </c:forEach>
-            <!-- <div class="swiper-slide slide">
-                    <div class="content">
-                        <span>Sản phẩm, dịch vụ phổ biến</span>
-                        <h3>Sim rác, sim lên mạng</h3>
-                        <p>Chúng tôi chuyên cung cấp các loại sim rác, sim lên mạng giá mềm</p>
-                        <a href="#" class="btn">Mua ngay</a>
-                    </div>
-                    <div class="image">
-                        <img src="<c:url value="/assets/user/images/slides/home-img-1.png"/>" alt="">
-                    </div>
-                </div>
-
-                <div class="swiper-slide slide">
-                    <div class="content">
-                        <span>Sản phẩm, dịch vụ phổ biến</span>
-                        <h3>Sim số đẹp</h3>
-                        <p>Chúng tôi chuyên cung cấp các loại sim taxi, tam hoa, tứ quý,... với giả cả phải chăng</p>
-                        <a href="#" class="btn">Mua ngay</a>
-                    </div>
-                    <div class="image">
-                        <img src="<c:url value ="/assets/user/images/slides/home-img-2.png"/>" alt="">
-                    </div>
-                </div>
-
-                <div class="swiper-slide slide">
-                    <div class="content">
-                        <span>Sản phẩm, dịch vụ phổ biến</span>
-                        <h3>Các dịch vụ hot hiện nay</h3>
-                        <p>Chuyển mạng giữ số</p>
-                        <p>Tìm số điện thoại theo yêu cầu</p>
-                        <p>Làm STK MB bank theo yêu cầu</p>
-                        <a href="#" class="btn">Tìm hiểu thêm</a>
-                    </div>
-                    <div class="image">
-                        <img src="<c:url value ="/assets/user/images/slides/home-img-3.png"/>" alt="">
-                    </div>
-                </div> -->>
-                
+	            <c:forEach var="item" items="${slides}" varStatus="index" >
+	            	<div class="swiper-slide slide">
+	                    <div class="content">
+	                        <span>${item.tag}</span>
+	                        <h3>${item.caption}</h3>
+	                        <p>${item.content}</p>
+	                        <a href="#menu" class="btn">Mua ngay</a>
+	                    </div>
+	                    <div class="image">
+	                        <img src="<c:url value="/assets/user/images/slides/${item.img}"/>" alt="">
+	                    </div>
+	                </div>
+	            </c:forEach> 
             </div>
+            
+            <div class="swiper-pagination"></div>
         </div>
 
     </section>
@@ -103,14 +65,10 @@
             <div class="box">
                 <a href="#" class="fas fa-heart"></a>
                 <a href="#" class="fas fa-eye"></a>
-                <img src="<c:url value="/assets/user/images/dish-1.png"/>" alt="">
-                <h3>tasty food</h3>
+                <img src="<c:url value="/assets/user/images/814814.png"/>" alt="">
+                <h3>Sim số đẹp</h3>
                 <div class="stars">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star-half-alt"></i>
+                	<h3>0927.814.814</h3>
                 </div>
                 <span>$15.99</span>
                 <a href="#" class="btn">add to cart</a>
